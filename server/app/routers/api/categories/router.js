@@ -10,9 +10,9 @@ const router = express.Router();
 
 const { read, browse } = require("../../../controllers/categoryActions");
 
-router.get("/", read);
+router.get("/", browse);
 
-router.get("/:id", browse);
+router.get("/:id", read);
 
 /* ************************************************************************* */
 
